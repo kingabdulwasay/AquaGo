@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Ride — AquaGo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">AquaGo</a>
+      <nav class="main-nav">
+        <a href="history.html">History</a>
+        <a href="login.html" class="btn">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container booking-page">
+    <section class="ride-panel card">
+      <h2>Request a ride</h2>
+      <form class="booking-form" action="#" onsubmit="return false;">
+        <div class="field">
+          <label for="pickup">Pickup</label>
+          <input id="pickup" placeholder="Where from?" required />
+        </div>
+<div class="field">
+  <label for="dropoff">Dropoff</label>
+  <input id="dropoff" placeholder="Where to?" required />
+
+</div>
+<div class="field">
+  <label for="ride-type">Ride type</label>
+  <select id="ride-type">
+    <option>Standard</option>
+    <option>XL</option>
+    <option>Luxury</option>
+  </select>
+
+</div>
+
+
+        <div class="fare-estimate">Estimated fare: <strong>$12–15</strong></div>
+
+        <button class="btn primary">Confirm</button>
+      </form>
+    </section>
+
+    <aside class="map card map-placeholder">Map (interactive)</aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 AquaGo</p>
+    </div>
+  </footer>
+</body>
+</html>

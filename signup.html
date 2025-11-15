@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign up — AquaGo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">AquaGo</a>
+      <nav class="main-nav">
+        <a href="login.html">Log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth container">
+    <div class="card auth-card">
+      <div style="display:flex;gap:16px;align-items:center;">
+        <!-- small illustrative SVG to add personality -->
+        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0" width="72" height="72" rx="14" fill="url(#g)"/>
+          <path d="M20 42c6-8 18-8 24 0" stroke="rgba(4,35,58,0.9)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="26" cy="30" r="3" fill="#04233a"/>
+          <circle cx="46" cy="30" r="3" fill="#04233a"/>
+          <defs>
+            <linearGradient id="g" x1="0" x2="72" y1="0" y2="72">
+              <stop offset="0" stop-color="#7be3ff" stop-opacity="0.95"/>
+              <stop offset="1" stop-color="#13d6b3" stop-opacity="0.9"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div>
+          <h1>Create account</h1>
+          <p class="muted" style="margin:6px 0 0;">Join AquaGo — request rides and track them in one place.</p>
+        </div>
+      </div>
+
+      <form action="#" onsubmit="return false;" class="auth-form" style="margin-top:18px">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" required />
+
+        <div style="margin-top:18px;display:flex;gap:12px;align-items:center;">
+          <button class="btn primary">Sign up</button>
+          <a class="btn ghost" href="login.html">Have an account?</a>
+        </div>
+
+        <p class="muted" style="margin-top:14px">By continuing you agree to our <a href="#" style="color:var(--accent);text-decoration:underline">Terms</a> and <a href="#" style="color:var(--accent);text-decoration:underline">Privacy</a>.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 AquaGo</p>
+    </div>
+  </footer>
+</body>
+</html>
